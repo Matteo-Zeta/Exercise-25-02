@@ -1,3 +1,5 @@
+import './Header.css';
+
 function Header(props) {
   return <header>
     <img id="logo" src={props.imageSrc} alt='logo' />
