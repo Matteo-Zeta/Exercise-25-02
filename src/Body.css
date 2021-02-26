@@ -1,0 +1,30 @@
+
+h1 {
+  position: absolute;
+  top: 10%;
+  right: 50px;
+  color: black;
+  z-index: 1;
+  text-align: end;
+}
+h2 {
+  top: 20%;
+  right: 50px;
+  position: absolute;
+  color: black;
+  z-index: 1;
+  text-align: right;
+  max-width: 50%;
+}
+main img {
+  top: 0;
+  max-width: 100%;
+  z-index: 0;
+  overflow: hidden;
+
+  /* max-height: 100vh; */
+}
+main {
+  position: relative;
+  background-color: white;
+}
