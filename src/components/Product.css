@@ -1,0 +1,6 @@
+.Card {
+  max-width: 250px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+}
