@@ -20,6 +20,7 @@
   max-width: 100%;
 }
 .Body {
+  max-width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -30,6 +31,10 @@
   padding: 30px;
   box-sizing: border-box;
 }
-.productsContainer {
-  max-width: 100%;
+.products-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
+

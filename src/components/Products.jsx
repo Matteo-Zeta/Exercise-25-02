@@ -11,12 +11,14 @@ class Product extends React.Component {
      <h3>{products.title}</h3>
      <i>{products.category}</i>
      <span>{products.description}</span>
-     <b>{products.price}</b>
+     <div className="price-container">
+     <b>{products.price} €</b>
+     </div>
    </div>
   }
 }
 Product.propTypes = {
-  products: PropTypes.array.isRequired,
+  products: PropTypes.object.isRequired,
 };
 
 export default Product

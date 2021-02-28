@@ -69,7 +69,7 @@ function App() {
     return (
       <div className="App">
         <Header imageSrc = {data.logo} name = {data.name} ></Header>
-        <Body cover={data.cover} title={data.title} description={data.description} products={data.products[0]}></Body>
+        <Body cover={data.cover} title={data.title} description={data.description} products={data.products}></Body>
         <Footer className="App-footer" company={data.company}></Footer>
       </div>
     );

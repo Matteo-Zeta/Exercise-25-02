@@ -24,10 +24,9 @@ class Body extends React.Component {
       <img src={cover} alt='cover' />
       <h1>{title}</h1>
       <h2>{description}</h2>
-      <div className="productsContainer">
-      <button onClick={() => this.makeProductsVisible()}>Show products</button>
-        <Product products={products} />
-      </div>
+      {showProducts ? //uso un ternario al posto di if
+      <div className="products-container">{products.map((product)=><Product products={product}/>)}</div> : 
+      <button onClick={() => this.makeProductsVisible()}>Show products</button>}
     </main>
   }
 }
@@ -36,7 +35,7 @@ Body.propTypes = {
   cover: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  products: PropTypes.object.isRequired,
+  products: PropTypes.array.isRequired,
 };
 
 export default Body
