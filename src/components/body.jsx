@@ -25,8 +25,8 @@ class Body extends React.Component {
       <h1>{title}</h1>
       <h2>{description}</h2>
       {showProducts ? //uso un ternario al posto di if
-      <div className="products-container">{products.map((product)=><Product products={product}/>)}</div> : 
-      <button onClick={() => this.makeProductsVisible()}>Show products</button>}
+      <div id="cont" className="products-container">{products.map((product)=><Product products={product}/>)}</div> : 
+      <button href='#cont' onClick={() => this.makeProductsVisible()}><a href='#cont'>Show products</a></button>}
     </main>
   }
 }

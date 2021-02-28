@@ -8,11 +8,13 @@ class Product extends React.Component {
    const {products} = this.props;
    return <div className="Card">
      <img src={products.image} alt="example item"/>
+     <div className="info-wrapper">
      <h3>{products.title}</h3>
      <i>{products.category}</i>
      <span>{products.description}</span>
      <div className="price-container">
      <b>{products.price} €</b>
+     </div>
      </div>
    </div>
   }
